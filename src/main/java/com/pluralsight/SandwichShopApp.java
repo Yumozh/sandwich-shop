@@ -24,11 +24,11 @@ public class SandwichShopApp {
 
         if (age <= 17) {
 
-            costFinal = price * 0.1;
+            costFinal = price - (price * 0.1);
         }
         else if (age >= 65) {
 
-            costFinal = price * 0.2;
+            costFinal = price - (price * 0.2);
         }
         else{
 
@@ -36,6 +36,6 @@ public class SandwichShopApp {
 
         }
 
-        System.out.println("Your total cost will be: $" + costFinal);
+        System.out.printf("Your total cost will be: $%.2f",costFinal);
     }
 }
